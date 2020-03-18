@@ -15,4 +15,7 @@ def P0001_M2():
 
 def main():
     print(f"method2: {P0001_M2()}")
-    print(timeit.timeit(stmt=P0001_M2(), number=100))
+    # print(timeit.timeit(stmt=P0001_M2(), number=100))
+
+
+main()
