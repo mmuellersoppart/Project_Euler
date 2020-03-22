@@ -78,9 +78,9 @@ A take away is that as the sequence gets larger and larger for a sequence [1..n]
 
 Can we do better? Yes. I will give away the twist. A rectangle will save us. 
 
-![blocks from seq [1..2] take up half of 2x3 rectangle] (sum3_ans.svg)
+![blocks from seq [1..2] take up half of 2x3 rectangle](sum3_ans.svg)
 
-![blocks from seq [1..7] take up half of 7x8 rectangle] (sum2_ans.svg)
+![blocks from seq [1..7] take up half of 7x8 rectangle](sum2_ans.svg)
 
 Do you see it? $\frac{n^2}{2}$ was close. Instead, we were off by a column. The correct function for getting the area/sequence is $\frac{n^2 + n}{2}$ or more commonly, $\frac{n \ (n+1)}{2}$. I like $$\frac{n^2 + n}{2}$$ because it clearly shows that as n gets larger n^2 will dominate the n term at the beginning. $$\frac{n \ (n+1)}{2}$$ more clearly shows a rectangle. 
 
