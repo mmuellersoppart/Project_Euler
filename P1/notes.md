@@ -66,13 +66,13 @@ Both seem equally difficult.
 
 Now look at these. It is actually a big give away to think about the shape in the context of a square, but some people just hand out the equation.
 
-![blocks take up 2/3 of square] (img/sum3.svg)
+![blocks take up 2/3 of square](img/sum3.svg)
 
-![blocks take up almost half of a square] (img/sum2.svg)
+![blocks take up almost half of a square](img/sum2.svg)
 
 An interesting observation is that the sequence 1 + 2 in a 2x2 square fills up 2/3(.66) of the area. For the sequence 1 + 2 + 3 + 4 + 5 + 6 + 7 in a 7x7 square, it fills 29/49(.59) of the blocks. The trend is clear. As we have a longer sequence, the area of the blocks approaches 1/2. 
 
-![blocks as they approach half] (img/OneHalf.svg)
+![blocks as they approach half](img/OneHalf.svg)
 
 A take away is that as the sequence gets larger and larger for a sequence [1..n], the function, $\frac{n^2}{2}$, becomes more correct in its ability to estimate.
 
@@ -122,7 +122,7 @@ algorithm
 
 This problem can be solved by many, many threads. Here is an example with three. Thread two and thread three jump over the multiples of 3, so the overlap does not need to be retroactively addressed. This method involves a good deal of hardcoding.
 
-![method3](/img/method3.svg)
+![method3](img/method3.svg)
 
 algorithm
 
