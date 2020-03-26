@@ -1,0 +1,75 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+TextData[{"Project"," ","Euler"," ","P0002"}],
+"Title",ExpressionUUID -> "d69444bd-e340-44dd-84c9-de941f11831b"],Cell[
+TextData[
+{"Method"," ","1","\n","(*","Marlon"," ","Mueller","-","Soppart","*)","\n","(*","20200326","*)","\n"}],
+"Text",ExpressionUUID -> "e054079c-f02b-48dd-a3c5-e8a6398dd853"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{"(*"," ",RowBox[{"Test"," ","out"," ","the"," ","function"}]," ","*)"}],"\n",RowBox[
+{"Table","[",RowBox[{RowBox[{"Fibonacci","[","i","]"}],","," ",RowBox[{"{",RowBox[
+{"i",",","0",","," ","10"}],"}"}]}],"]"}]}]],"Input",ExpressionUUID -> "ea8ddc3d-a134-476f-bdfc-1d615a95091d",
+CellLabel -> "In[9]:= "],Cell[
+BoxData[RowBox[{"{",RowBox[{"0",",","1",",","1",",","2",",","3",",","5",",","8",",","13",",","21",",","34",",","55"}],"}"}],
+StandardForm],"Output",ExpressionUUID -> "9ce90784-22e7-4a70-bba2-5d26fdc99b07",CellLabel -> "Out[9]= "]},
+Open],ExpressionUUID -> "f9ef69df-eab7-49f9-b13d-56bd13b3887e"],Cell[
+BoxData[RowBox[
+{RowBox[{"(*"," ",RowBox[{"Find"," ","when"," ","fibnocci"," ","sequence"," ","passes"," ","4"," ","million"}]," ","*)"}],"\n",RowBox[
+{RowBox[{"endFinder","[","x_","]"}],":=","\n",RowBox[{"If","[",RowBox[{RowBox[{RowBox[
+{"Fibonacci","[","x","]"}]," ",">"," ","4000000"}],","," ",RowBox[{"Print","[",RowBox[
+{"x"," ",",","\", \"",","," ",RowBox[{"Fibonacci","[","x","]"}]}],"]"}],",",RowBox[
+{"endFinder","[",RowBox[{"x"," ","+"," ","1"}],"]"}]}],"]"}]," "}]}]],"Input",ExpressionUUID -> "02830416-cb35-4e0d-a116-cd3653ee2263"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"endFinder","[","0","]"}]],"Input",ExpressionUUID -> "8ee2ebee-6c96-4aa1-a896-5785aa91acf8"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"34","\[InvisibleSpace]","\", \"","\[InvisibleSpace]","5702887"}],
+SequenceForm[34,", ",5702887],Editable -> False],StandardForm],"Print",ExpressionUUID -> "d52f27e8-1486-41e6-ba8f-077287f36754"]},
+Open],ExpressionUUID -> "e4fd0e2b-8471-403a-97f2-0301970e5ef3"],Cell[
+TextData[{"\n","From"," ","this",StyleBox[
+RowBox[{","," "}]],"it"," ","is"," ","clear"," ","that"," ","the"," ","35th"," ","element"," ","in"," ","the"," ","sequence"," ","passes"," ","4"," ","million",StyleBox[
+RowBox[{"."," "}]],"Put"," ","another"," ","way",StyleBox[RowBox[{","," "}]],"when"," ","you"," ","plug"," ","in"," ","34"," ","into"," ","the"," ","Fibonacci"," ","function"," ","it'll"," ","yield"," ","a"," ","number"," ","greater"," ","than"," ","4"," ","million","."}],
+"Text",ExpressionUUID -> "15f69787-7394-4ad0-8cdb-2033079bd7fd"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"oddToZero","[","x_","]"}],":="," ","\n",RowBox[{"If","[",RowBox[
+{RowBox[{RowBox[{"Mod","[",RowBox[{"x",","," ","2"}],"]"}]," ","\[NotEqual]"," ","0"}],",","0",","," ","x"}],"]"}]}],RowBox[
+{"\n","\n"}],RowBox[{"Total","[",RowBox[{"oddToZero","/@",RowBox[{"(",RowBox[{"Table","[",RowBox[
+{RowBox[{"Fibonacci","[","i","]"}],","," ",RowBox[{"{",RowBox[{"i",","," ","2",","," ","33"}],"}"}]}],"]"}],")"}]}],"]"}]}],
+"Input",ExpressionUUID -> "dc181e15-9d5d-487f-91b5-0490b3c61133",CellLabel -> "In[23]:= "],Cell[
+BoxData[
+"4613732",StandardForm],"Output",ExpressionUUID -> "8f9c0d3c-35eb-4c40-9f4c-db0e88989f79",
+CellLabel -> "Out[24]= "]},Open],ExpressionUUID -> "876a8a75-f5d6-4210-86d7-68586f2aaf36"],Cell[
+TextData[
+{"Additional"," ","analysis","."}],"Text",ExpressionUUID -> "be62c4d0-fe74-488a-a6a5-117d2991069d"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"oddToZero","/@",RowBox[{"(",RowBox[{"Table","[",RowBox[{RowBox[
+{"Fibonacci","[","i","]"}],","," ",RowBox[{"{",RowBox[{"i",","," ","2",","," ","33"}],"}"}]}],"]"}],")"}]}]],
+"Input",ExpressionUUID -> "c7e6b384-104a-4f18-92ed-3a87131da29e",CellLabel -> "In[25]:= "],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"0",",","2",",","0",",","0",",","8",",","0",",","0",",","34",",","0",",","0",",","144",",","0",",","0",",","610",",","0",",","0",",","2584",",","0",",","0",",","10946",",","0",",","0",",","46368",",","0",",","0",",","196418",",","0",",","0",",","832040",",","0",",","0",",","3524578"}],"}"}],
+StandardForm],"Output",ExpressionUUID -> "1d0033fd-3d05-4d60-8611-f10b6ec9fbf4",CellLabel -> "Out[25]= "]},
+Open],ExpressionUUID -> "08e83a74-fb40-4c23-91e3-f9df99d8b94b"],Cell[
+TextData[{"Unsurprisingly",StyleBox[
+RowBox[{","," "}]],"every"," ","three"," ","numbers"," ","is"," ","an"," ","even"," ","number",StyleBox[
+RowBox[{"."," "," "}]],"Prepare"," ","yourself"," ","for"," ","a"," ","pathetically"," ","unprofessional"," ","inductive"," ","proof",".","\n","\n","START","\n","In"," ","natural"," ","language",StyleBox[
+RowBox[{","," "}]],"We"," ","start"," ","with"," ","an"," ","even"," ","and"," ","odd",StyleBox[
+RowBox[{" "," "}]],"number",StyleBox[RowBox[{"."," "}]],"Those"," ","\n","odd",StyleBox[
+RowBox[{","," "}]],"even",StyleBox[RowBox[{","," "}]],"_",StyleBox[RowBox[{" ",","," "}]],"_",StyleBox[
+RowBox[{","," "}]],"_","\n","\n","An"," ","even",StyleBox[RowBox[{" ","+"," "}]],"odd"," ","number"," ","is"," ","odd",StyleBox[
+RowBox[{"."," "}]],"\n","odd",StyleBox[RowBox[{","," "}]],"even",StyleBox[RowBox[
+{","," "}]],"odd",StyleBox[RowBox[{","," "}]],"_",StyleBox[RowBox[{","," "}]],"_","\n","\n","Again",StyleBox[
+RowBox[{","," "}]],"an"," ","even",StyleBox[RowBox[{" ","+"," "}]],"odd"," ","number"," ","will"," ","yield"," ","an"," ","odd"," ","number",".","\n","odd",StyleBox[
+RowBox[{","," "}]],"even",StyleBox[RowBox[{","," "}]],"odd",StyleBox[RowBox[{","," "}]],"odd",StyleBox[
+RowBox[{","," "}]],"_","\n","\n","Two"," ","odds",StyleBox[RowBox[{","," "}]],"odd",StyleBox[
+RowBox[{" ","+"," "}]],"odd",StyleBox[RowBox[{","," "}]],"will"," ","yield"," ","an"," ","even","\n","odd",StyleBox[
+RowBox[{","," "}]],"even",StyleBox[RowBox[{","," "}]],"odd",StyleBox[RowBox[{","," "}]],"odd",StyleBox[
+RowBox[{","," "}]],"even","\n","\n","And"," ","the"," ","pattern"," ","begins"," ","again",StyleBox[
+RowBox[{"."," "}]],"\n","END"}],"Text",ExpressionUUID -> "ceb089bb-496d-4252-bbc2-4c5f0568a393"],Cell[
+BoxData[
+""],"Input",ExpressionUUID -> "5a765a0d-36ec-429c-ad13-29a81004b1cc"],Cell[
+"\<\>",
+"Chapter",ExpressionUUID -> "ee11965b-1854-4a1e-8f49-31ed7ba79296"]},Open],ExpressionUUID -> "0b113b0a-4228-41da-a8e3-6ec3e675fa5e"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "12.1 for Wolfram Cloud 1.54.2 (March 10, 2020)"]
