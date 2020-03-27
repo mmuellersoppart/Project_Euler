@@ -29,7 +29,7 @@ func solveP0002(MAX: Int) -> Int {
         currFibValue = fibonacci(fibSeqPos: stopValue)
     }
     
-    //picking every third number from the first one at position 1
+    //picking every third number from the first even number at position 1 
     let seqAcceptablePos = stride(from: 1, to: stopValue, by: 3)
     for pos in seqAcceptablePos {
         answer += fibonacci(fibSeqPos: pos)
