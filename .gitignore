@@ -3,3 +3,5 @@
 *.plist
 *.xcuserstate
 *.idea
+*.iml
+*.xml
